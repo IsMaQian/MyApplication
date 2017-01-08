@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/ok_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonget_btn"
+        android:layout_alignBottom="@+id/buttonget_btn"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/buttonget_btn"
+        android:background="@android:color/transparent" 
+        android:text="参数设置"
+        android:textColor="#696969" />
+    
+        <EditText        
+        android:id="@+id/nameTextGypro_KP_RP"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textViewGypro_KP_RP"
+        android:layout_toLeftOf="@+id/nameTextGypro_KI_RP"
+        android:layout_weight="0.333"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:ems="10" />
+     	
+
+    <EditText
+        android:id="@+id/nameTextGypro_KI_RP"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/textViewGypro_KI_RP"
+        android:layout_below="@+id/textViewGypro_KD_RP"
+        android:layout_toLeftOf="@+id/nameTextGypro_KD_RP"
+        android:layout_weight="0.333"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/nameTextProp_KP_Y"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/nameTextProp_KI_Y"
+        android:layout_alignBottom="@+id/nameTextProp_KI_Y"
+        android:layout_alignLeft="@+id/nameTextProp_KP_RP"
+        android:layout_alignRight="@+id/textViewProp_KP_RP"
+        android:layout_weight="0.333"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/nameTextGypro_KD_RP"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@id/nameTextGypro_KI_RP"
+        android:layout_alignBottom="@id/nameTextGypro_KI_RP"
+        android:layout_alignLeft="@id/textViewGypro_KD_RP"
+        android:layout_alignRight="@id/textViewGypro_KD_RP"
+        android:layout_weight="0.333"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:gravity="center" />
+    
+
+
+
+    <TextView
+        android:id="@+id/textViewGypro_KP_RP"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@id/textViewGypro_KI_RP"
+        android:layout_alignBottom="@id/textViewGypro_KI_RP"
+        android:layout_alignLeft="@+id/textViewGypro_KP_Y"
+        android:layout_weight="0.333"
+        android:text=" Gypro_KP_RP" />
+
+    <EditText
+        android:id="@+id/nameTextGypro_KI_Y"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_above="@id/textViewProp_KP_RP"
+        android:layout_toLeftOf="@+id/textViewGypro_KD_Y"
+        android:layout_toRightOf="@id/nameTextGypro_KP_RP"
+        android:layout_weight="0.333"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/nameTextGypro_KD_Y"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/textViewGypro_KD_Y"
+        android:layout_alignRight="@id/nameTextGypro_KD_RP"
+        android:layout_below="@+id/textViewGypro_KI_Y"
+        android:layout_weight="0.333"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/textViewGypro_KD_RP"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/textViewGypro_KD_Y"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginTop="31dp"
+        android:layout_weight="0.333"
+        android:text=" Gypro_KD_RP" />
+
+    <EditText
+        android:id="@+id/nameTextProp_KP_RP"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/nameTextGypro_KP_Y"
+        android:layout_below="@id/textViewProp_KP_RP"
+        android:layout_weight="0.5"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/nameTextProp_KI_RP"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_alignRight="@id/nameTextGypro_KD_Y"
+        android:layout_below="@+id/textViewProp_KI_RP"
+        android:layout_toRightOf="@id/nameTextGypro_KI_Y"
+        android:layout_weight="0.5"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/textViewProp_KP_Y"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@id/nameTextProp_KP_Y"
+        android:layout_below="@id/nameTextProp_KP_RP"
+        android:layout_toLeftOf="@id/nameTextGypro_KI_Y"
+        android:layout_weight="0.333"
+        android:text=" Prop_KP_Y" />
+
+    <EditText
+        android:id="@+id/nameTextProp_KI_Y"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignRight="@id/nameTextProp_KI_RP"
+        android:layout_below="@+id/textViewProp_KI_Y"
+        android:layout_toRightOf="@id/nameTextGypro_KI_Y"
+        android:layout_weight="0.333"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/textViewProp_KP_RP"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@id/nameTextProp_KP_RP"
+        android:layout_alignRight="@id/nameTextProp_KP_RP"
+        android:layout_below="@+id/nameTextGypro_KP_Y"
+        android:layout_weight="0.333"
+        android:ems="10"
+        android:text="Prop_KP_RP" />
+
+    <TextView
+        android:id="@+id/textViewGypro_KI_RP"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_above="@id/nameTextGypro_KI_RP"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0.333"
+        android:text=" Gypro_KI_RP" />
+
+    <TextView
+        android:id="@+id/textViewGypro_KI_Y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewGypro_KP_Y"
+        android:layout_alignLeft="@id/textViewGypro_KI_RP"
+        android:layout_below="@id/nameTextGypro_KI_RP"
+        android:layout_weight="0.333"
+        android:text=" Gypro_KI_Y" />
+
+    <TextView
+        android:id="@+id/textViewProp_KI_RP"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@id/textViewProp_KP_RP"
+        android:layout_alignBottom="@id/textViewProp_KP_RP"
+        android:layout_alignLeft="@id/nameTextProp_KI_RP"
+        android:layout_alignRight="@id/nameTextGypro_KD_Y"
+        android:layout_weight="0.333"
+        android:ems="10"
+        android:text="  Prop_KI_RP" />
+
+    <TextView
+        android:id="@+id/textViewProp_KI_Y"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@id/textViewProp_KP_Y"
+        android:layout_alignBottom="@id/textViewProp_KP_Y"
+        android:layout_alignLeft="@id/nameTextProp_KI_RP"
+        android:layout_alignRight="@id/nameTextProp_KI_RP"
+        android:layout_weight="0.333"
+        android:ems="10"
+        android:text="     Prop_KI_Y" />
+
+    <Button
+        android:id="@+id/buttonget_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@id/textViewGypro_KP_RP"
+        android:layout_marginBottom="14dp"
+        android:background="@android:color/transparent"
+        android:text="参数获取"
+        android:textColor="#696969" />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/ok_btn"
+        android:layout_alignBottom="@id/ok_btn"
+        android:layout_alignRight="@id/textViewGypro_KD_RP"
+        android:background="@android:color/transparent"
+        android:text="返回"
+        android:textColor="#696969" />
+
+    <EditText
+        android:id="@+id/nameTextGypro_KP_Y"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@id/nameTextGypro_KD_Y"
+        android:layout_alignBottom="@id/nameTextGypro_KD_Y"
+        android:layout_alignLeft="@id/nameTextGypro_KP_RP"
+        android:layout_alignRight="@id/nameTextGypro_KP_RP"
+        android:layout_weight="0.333"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:gravity="center" >
+
+       
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewGypro_KP_Y"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@id/nameTextGypro_KP_Y"
+        android:layout_below="@id/nameTextGypro_KP_RP"
+        android:layout_weight="0.333"
+        android:text=" Gypro_KP_Y" />
+
+    <TextView
+        android:id="@+id/textViewGypro_KD_Y"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/nameTextGypro_KD_Y"
+        android:layout_below="@id/nameTextGypro_KP_RP"
+        android:layout_toRightOf="@id/textViewGypro_KI_RP"
+        android:layout_weight="0.333"
+        android:text=" Gypro_KD_Y" />
+
+</RelativeLayout>

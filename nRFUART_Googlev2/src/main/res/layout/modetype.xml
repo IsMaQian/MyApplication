@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@id/buttonback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="23dp"
+        android:layout_marginRight="23dp"
+        android:background="@android:color/transparent"
+        android:text="返回"
+        android:textColor="#696969" />
+
+    <Button
+        android:id="@+id/buttonindexset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/buttonback"
+        android:layout_alignBottom="@id/buttonback"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="23dp"
+        android:background="@android:color/transparent"
+        android:text="参数设置"
+        android:textColor="#696969" />
+
+    <com.nordicsemi.nrfUARTv2.NumberSeekBar
+        android:id="@+id/bar0"
+        style="@style/NumberProgressBar_Default"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewdaisu"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/buttonindexset"
+        android:focusable="false"
+        android:max="100"
+        android:progressDrawable="@drawable/numberseekbar_background"
+        android:thumb="@drawable/thumb_bar" />
+
+    <Button
+        android:id="@+id/buttonmodelselect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewhuizhong"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/transparent"
+        android:text="机型选择"
+        android:textColor="#696969" />
+
+    <TextView
+        android:id="@id/textViewdaisu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerhuizhong"
+        android:layout_marginTop="52dp"
+        android:layout_toLeftOf="@id/bar0"
+        android:text="怠速设置：" />
+
+    <View
+        android:id="@id/View05"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/View05"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        android:background="#F0909090" />
+
+    <TextView
+        android:id="@id/textViewhuizhong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttondianchi"
+        android:layout_marginTop="34dp"
+        android:layout_toLeftOf="@id/bar0"
+        android:text="遥控回中：" />
+
+    <View
+        android:id="@id/View06"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/bar0"
+        android:layout_marginTop="19dp"
+        android:layout_weight="1"
+        android:background="#F0909090" />
+
+    <View
+        android:id="@id/View01"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/buttonmodelselect"
+        android:layout_weight="1"
+        android:background="#F0909090" />
+
+    <TextView
+        android:id="@+id/textViewykqset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonykqselect"
+        android:layout_alignBottom="@id/buttonykqselect"
+        android:layout_alignLeft="@+id/textViewmodelset"
+        android:text="   14SG   " />
+
+    <Spinner
+        android:id="@id/spinnerhuizhong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bar0"
+     
+        android:layout_alignRight="@+id/bar0"
+        android:layout_below="@id/buttondianchi"
+        android:layout_marginTop="14dp" />
+
+    <View
+        android:id="@id/View05"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/bar0"
+        android:layout_weight="1"
+        android:background="#F0909090" />
+
+    <View
+        android:id="@id/View05"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/View05"
+        android:layout_weight="1"
+        android:background="#F0909090" />
+
+    <Button
+        android:id="@id/buttondianchi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/buttonykqselect"
+        android:layout_below="@id/buttonykqselect"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:text="电池选型"
+        android:textColor="#696969" />
+
+    <Button
+        android:id="@id/buttonykqselect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonmodelselect"
+        android:layout_below="@+id/buttonmodelselect"
+        android:layout_marginTop="17dp"
+        android:background="@android:color/transparent"
+        android:text="遥控选择"
+        android:textColor="#696969" />
+
+    <View
+        android:id="@id/View02"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/buttondianchi"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        android:background="#F0909090" />
+
+    <View
+        android:id="@id/View03"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/textViewhuizhong"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        android:background="#F0909090" />
+
+    <TextView
+        android:id="@+id/textViewdianchiset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/buttondianchi"
+        android:layout_alignBottom="@id/buttondianchi"
+        android:layout_alignLeft="@id/buttonback"
+        android:layout_alignRight="@+id/textViewykqset"
+        android:text=" 4S  " />
+
+    <TextView
+        android:id="@+id/textViewmodelset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonmodelselect"
+        android:layout_alignBottom="@+id/buttonmodelselect"
+        android:layout_alignParentRight="true"
+        android:text="四轴叉字逆时针" />
+
+</RelativeLayout>

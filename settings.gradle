@@ -1,0 +1,2 @@
+include ':app', ':dataextract', ':dataextract1', ':testimage', ':allview', ':volleytest', ':nine-patch'
+include ':nRFUART_Googlev2'

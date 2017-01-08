@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/allview/allview.iml" filepath="$PROJECT_DIR$/allview/allview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dataextract/dataextract.iml" filepath="$PROJECT_DIR$/dataextract/dataextract.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dataextract1/dataextract1.iml" filepath="$PROJECT_DIR$/dataextract1/dataextract1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nRFUART_Googlev2/nRFUART_Googlev2.iml" filepath="$PROJECT_DIR$/nRFUART_Googlev2/nRFUART_Googlev2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nine-patch/nine-patch.iml" filepath="$PROJECT_DIR$/nine-patch/nine-patch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testimage/testimage.iml" filepath="$PROJECT_DIR$/testimage/testimage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/volleytest/volleytest.iml" filepath="$PROJECT_DIR$/volleytest/volleytest.iml" />
+    </modules>
+  </component>
+</project>

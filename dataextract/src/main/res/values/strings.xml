@@ -1,0 +1,65 @@
+<resources>
+    <string name="show_devices">查询配对设备</string>
+    <string name="start_tooth">开启蓝牙</string>
+    <string name="search_tooth">搜索设备</string>
+    <string name="link_tooth">连接设备</string>
+    <string name="close_tooth">关闭蓝牙</string>
+    <string name="tooth_name">蓝牙名</string>
+    <string name="tooth_address">蓝牙地址</string>
+    <string name="app_name">DataExtract</string>
+    <string name="workSpeed">作业速度:</string>
+    <string name="sendField">喷洒幅度:</string>
+    <string name="workHigh">作业高度:</string>
+    <string name="workDis">作业距离:</string>
+    <string name="dataGet">参数获取</string>
+    <string name="dataSet">参数设置</string>
+    <string name="flyChose">机型选择:</string>
+    <string name="controlChose">遥控选择:</string>
+    <string name="cellTyle">电池选型:</string>
+    <string name="controlRet">遥控回中:</string>
+    <string name="stopSpeed">怠速设置:</string>
+    <string name="voltage">电  压：</string>
+    <string name="start">星  数：</string>
+    <string name="accelerate">加速度：</string>
+    <string name="angle">姿态角：</string>
+    <string name="geomagnetism">地 磁：</string>
+    <string name="gyroscope">陀螺仪：</string>
+    <string name="flyState">机 型：</string>
+    <string name="remoteControl">遥控器：</string>
+    <string name="range">幅 度：</string>
+    <string name="hight">高 度：</string>
+    <string name="speed">速 度：</string>
+    <string name="distance">距 离：</string>
+
+    <string-array name="flyChose">
+        <item>四旋翼叉字顺时针</item>
+        <item>四旋翼叉字逆时针</item>
+        <item>四旋翼十字顺时针</item>
+        <item>四旋翼十字逆时针</item>
+        <item>六旋翼V字顺时针</item>
+        <item>六旋翼V字逆时针</item>
+        <item>六旋翼一字顺时针</item>
+        <item>六旋翼一字逆时针</item>
+        <item>八旋翼叉字顺时针</item>
+        <item>八旋翼叉字逆时针</item>
+        <item>八旋翼十字顺时针</item>
+        <item>八旋翼十字逆时针</item>
+        <item>共轴叉字顺时针</item>
+        <item>共轴叉字逆时针</item>
+    </string-array>
+
+    <string-array name="contronChose">
+        <item>14SG</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="cellChose">
+        <item>2S</item>
+        <item>3S</item>
+        <item>4S</item>
+        <item>6S</item>
+    </string-array>
+    <string-array name="controlRet">
+        <item>是</item>
+        <item>否</item>
+    </string-array>
+</resources>

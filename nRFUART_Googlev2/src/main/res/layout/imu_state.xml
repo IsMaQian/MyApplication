@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView    
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="fill_parent"    
+    android:layout_height="fill_parent"    
+    android:scrollbars="vertical"    
+    android:fadingEdge="vertical">  
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="530dp"
+    android:layout_weight="1"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewstrnumvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewStanum"
+        android:layout_alignBottom="@id/textViewStanum"
+        android:layout_alignLeft="@+id/textViewAcc_State"
+        android:layout_alignRight="@id/textViewAcc_State"
+        android:layout_weight="1"
+        android:text=" 0" />
+
+    <TextView
+        android:id="@+id/textViewykqvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewyaokongqi"
+        android:layout_alignLeft="@+id/textViewjixingvalue"
+        android:layout_alignRight="@id/textViewjixingvalue"
+        android:layout_weight="1"
+        android:text="14SG        " />
+
+    <TextView
+        android:id="@+id/textViewworkspeedwvvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewworkspeedw"
+        android:layout_alignLeft="@id/textViewykqvalue"
+        android:layout_alignRight="@+id/textViewGyro_State"
+        android:layout_weight="1"
+        android:text="0.0米/秒" />
+
+    <TextView
+        android:id="@+id/textViewVol_State"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/textViewvoltage"
+        android:layout_alignLeft="@+id/textViewZitai_State"
+        android:layout_alignRight="@id/textViewstrnumvalue"
+        android:layout_alignTop="@id/textViewvoltage"
+        android:layout_weight="1"
+        android:text=" 0.0V" />
+
+    <TextView
+        android:id="@id/textViewAcc_State"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textViewZitai_State"
+        android:layout_alignRight="@+id/textViewMag_State"
+        android:layout_alignTop="@+id/textViewAcc"
+        android:layout_weight="1"
+        android:text="ACC异常" />
+
+    <TextView
+        android:id="@id/textViewZitai_State"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textViewMag_State"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textViewZitai"
+        android:layout_weight="1"
+        android:text="IMU异常" />
+
+    <TextView
+        android:id="@+id/textViewjixing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewGyro"
+        android:layout_below="@id/textViewGyro"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:text="机    型："
+        android:textColor="#F0909090"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@id/textViewyaokongqi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textViewjixing"
+        android:layout_below="@id/textViewjixing"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:text="遥控器："
+        android:textColor="#F0909090"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewfuduwvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewworkfuduw"
+        android:layout_alignBottom="@id/textViewworkfuduw"
+        android:layout_alignLeft="@id/textViewykqvalue"
+        android:layout_alignRight="@id/textViewworkspeedwvvalue"
+        android:layout_weight="1"
+        android:text="0.0米" />
+
+    <TextView
+        android:id="@id/textViewworkfuduw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/textViewyaokongqi"
+        android:layout_below="@id/textViewyaokongqi"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:text="幅    度："
+        android:textColor="#F0909090"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewgaoduwvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewgaoduw"
+        android:layout_alignBottom="@id/textViewgaoduw"
+        android:layout_alignLeft="@id/textViewfuduwvalue"
+        android:layout_alignRight="@id/textViewfuduwvalue"
+        android:layout_weight="1"
+        android:text="0.0米" />
+
+    <TextView
+        android:id="@id/textViewAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textViewZitai"
+        android:layout_alignRight="@id/textViewyaokongqi"
+        android:layout_below="@id/textViewStanum"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:text="加速度： "
+        android:textColor="#F0909090"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@id/textViewZitai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textViewGyro"
+        android:layout_below="@id/textViewAcc"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:text="姿态角： "
+        android:textColor="#F0909090"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/seekbarscr"
+        android:layout_marginRight="14dp"
+        android:background="@android:color/transparent"
+        android:text="返回"
+        android:textColor="#696969" />
+
+    <TextView
+        android:id="@id/textViewStanum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textViewZitai"
+        android:layout_below="@id/textViewvoltage"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:text="星    数： "
+        android:textColor="#F0909090"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@id/textViewvoltage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textViewworkfuduw"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@id/textViewAcc"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:text="电    压： "
+        android:textColor="#F0909090"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@id/textViewgaoduw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textViewyaokongqi"
+        android:layout_below="@id/textViewworkfuduw"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:text="高    度："
+        android:textColor="#F0909090"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@id/textViewworkspeedw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textViewworkfuduw"
+        android:layout_below="@id/textViewgaoduw"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:text="速    度："
+        android:textColor="#F0909090"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewjuiwvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewjuliw"
+        android:layout_alignBottom="@id/textViewjuliw"
+        android:layout_alignLeft="@id/textViewfuduwvalue"
+        android:layout_alignRight="@id/textViewworkspeedwvvalue"
+        android:layout_weight="1"
+        android:text="0.0米" />
+
+    <TextView
+        android:id="@id/textViewjuliw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textViewworkspeedw"
+        android:layout_alignRight="@+id/textViewMag"
+        android:layout_below="@id/textViewworkspeedw"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:text="距    离："
+        android:textColor="#F0909090"
+        android:textSize="18sp" />
+
+    <SeekBar
+        android:id="@id/seekbarscr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/textViewjuliw"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@id/textViewGyro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/textViewGyro_State"
+        android:layout_marginLeft="18dp"
+        android:layout_weight="1"
+        android:text="陀螺仪： "
+        android:textColor="#F0909090"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@id/textViewjixingvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/buttonback"
+        android:layout_alignTop="@id/textViewjixing"
+        android:layout_weight="1"
+        android:text="四轴十字逆" />
+
+    <TextView
+        android:id="@id/textViewGyro_State"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textViewjixingvalue"
+        android:layout_below="@id/textViewMag"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:text="GYRO异常" />
+
+    <View
+        android:id="@+id/View02"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/textViewMag"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        android:background="#F0909090" />
+
+    <TextView
+        android:id="@id/textViewMag_State"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textViewGyro_State"
+        android:layout_alignTop="@id/textViewMag"
+        android:layout_weight="1"
+        android:text="MAG异常" />
+
+    <TextView
+        android:id="@id/textViewMag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textViewZitai"
+        android:layout_below="@id/textViewZitai"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:text="地    磁： "
+        android:textColor="#F0909090"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/View09"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/textViewgaoduw"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        android:background="#F0909090" />
+
+    <View
+        android:id="@+id/View11"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/textViewjuliw"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        android:background="#F0909090" />
+
+    <View
+        android:id="@+id/View07"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/textViewAcc"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        android:background="#F0909090" />
+
+    <View
+        android:id="@+id/View04"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textViewMag"
+        android:layout_weight="1"
+        android:background="#F0909090" />
+
+    <View
+        android:id="@+id/View05"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textViewGyro"
+        android:layout_weight="1"
+        android:background="#F0909090" />
+
+    <View
+        android:id="@+id/View03"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewVol_State"
+        android:layout_weight="1"
+        android:background="#F0909090" />
+
+    <View
+        android:id="@+id/View01"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textViewAcc"
+        android:layout_weight="1"
+        android:background="#F0909090" />
+
+    <View
+        android:id="@+id/View08"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewykqvalue"
+        android:layout_weight="1"
+        android:background="#F0909090" />
+
+    <View
+        android:id="@+id/View10"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewgaoduwvalue"
+        android:layout_weight="1"
+        android:background="#F0909090" />
+
+    <View
+        android:id="@+id/View12"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewjuiwvalue"
+        android:layout_weight="1"
+        android:background="#F0909090" />
+
+    <View
+        android:id="@+id/View06"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/textViewyaokongqi"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        android:background="#F0909090" />
+
+</RelativeLayout>
+
+</ScrollView>

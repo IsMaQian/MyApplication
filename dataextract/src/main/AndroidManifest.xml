@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mq.dataextract">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="AYDrone"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Holo.Light">
+        <activity android:name=".o.Activity.TabMainActivity"
+            android:logo="@mipmap/icon">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".o.Activity.DataExtract"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".o.Activity.LinkedTooth"
+            android:theme="@android:style/Theme.Dialog"/>
+        <service android:name=".o.Service.BlueToothService"/>
+    </application>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+</manifest>

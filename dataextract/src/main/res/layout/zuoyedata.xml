@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/workSpeed1"
+            android:layout_weight="0.06"
+            android:text="@string/workSpeed" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/workSpeed"
+            android:gravity="center"
+            android:text="0"
+            android:layout_weight="0.68"
+            android:background="@drawable/shape"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="m/s"
+            android:gravity="center"
+            android:layout_weight="0.13"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sendField1"
+            android:layout_weight="0.06"
+            android:text="@string/sendField" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sendField"
+            android:gravity="center"
+            android:background="@drawable/shape"
+            android:text="0"
+            android:layout_weight="0.68" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="m"
+            android:gravity="center"
+            android:layout_weight="0.13"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/workHigh1"
+            android:layout_weight="0.06"
+            android:text="@string/workHigh" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/workHigh"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:text="0"
+            android:layout_weight="0.68" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="m"
+            android:gravity="center"
+            android:layout_weight="0.13"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/workDis1"
+            android:layout_weight="0.06"
+            android:text="@string/workDis" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/workDis"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:text="0"
+            android:layout_weight="0.68" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="m"
+            android:gravity="center"
+            android:layout_weight="0.13"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="61dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dataGet"
+            android:text="@string/dataGet"
+            android:background="@android:color/transparent"
+            android:textColor="#696969" />
+        <Button
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dataSet"
+            android:text="@string/dataSet"
+            android:background="@android:color/transparent"
+            android:textColor="#696969"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

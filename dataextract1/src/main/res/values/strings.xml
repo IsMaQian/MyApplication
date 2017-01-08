@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DataExtract</string>
+    <string name="dataextract">参数提取</string>
+    <string name="linkBlueT">连接蓝牙</string>
+    <string name="disconn">关闭蓝牙</string>
+    <string name="setdata">设置参数</string>
+    <string name="show_devices">查询配对设备</string>
+    <string name="start_tooth">开启蓝牙</string>
+    <string name="search_tooth">搜索设备</string>
+    <string name="link_tooth">连接设备</string>
+    <string name="close_tooth">关闭蓝牙</string>
+    <string name="tooth_name">蓝牙名</string>
+    <string name="tooth_address">蓝牙地址</string>
+</resources>

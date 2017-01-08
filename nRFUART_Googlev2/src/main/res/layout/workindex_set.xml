@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewworkdistance"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_alignBaseline="@+id/editText3"
+        android:layout_alignBottom="@+id/editText3"
+        android:layout_toLeftOf="@+id/editText3"
+        android:text="作业距离：    " />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignTop="@+id/textViewworkspeed"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:ems="10"/>
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText4"
+        android:layout_alignBottom="@+id/editText4"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/editText4"
+        android:text="m" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText3"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="m" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="m" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewworkrange"
+        android:layout_toRightOf="@+id/textViewworkrange"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:ems="10"/>
+
+    <Button
+        android:id="@+id/buttonback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttongetindex"
+        android:layout_alignBottom="@+id/buttongetindex"
+        android:layout_toRightOf="@+id/textView3"
+        android:background="@android:color/transparent"
+        android:text="返回"
+        android:textColor="#696969" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="m/s" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewworkhight"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:ems="10"/>
+
+    <TextView
+        android:id="@+id/textViewworkrange"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_alignLeft="@+id/textViewworkspeed"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:text="喷晒幅度：    " />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_below="@+id/textViewworkspeed"
+        android:layout_marginTop="57dp"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/textViewworkhight"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_alignTop="@+id/editText4"
+        android:layout_toLeftOf="@+id/editText4"
+        android:text="作业高度：    " />
+
+    <TextView
+        android:id="@+id/textViewworkspeed"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_above="@+id/editText2"
+        android:layout_alignLeft="@+id/textViewworkhight"
+        android:text="作业速度：    " />
+
+    <Button
+        android:id="@+id/buttongetindex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewworkdistance"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="23dp"
+        android:background="@android:color/transparent"
+        android:radius="15dip"
+        android:text="参数获取"
+        android:textColor="#696969" />
+
+    <Button
+        android:id="@+id/buttonsetindex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttongetindex"
+        android:layout_alignBottom="@+id/buttongetindex"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:text="参数设置"
+        android:textColor="#696969" />
+
+</RelativeLayout>
